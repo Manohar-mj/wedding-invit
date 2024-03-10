@@ -1,0 +1,64 @@
+/* src/components/ImageGallery.css */
+
+.image-gallery {
+  font-family: 'Brother Signature', sans-serif;
+  display: grid;
+  height: 100%;
+  gap: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item .gallery-image {
+  width: 100vw;
+  height: 100vh;
+  height: auto;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-image {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+  animation: fadeInOverlay 0.5s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .gallery-item .overlay {
+    font-size: 1em;
+  }
+}

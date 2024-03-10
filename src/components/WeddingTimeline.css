@@ -1,0 +1,39 @@
+/* WeddingTimeline.css */
+
+.dat{
+  /* font-size: 20px; */
+  font-family: 'Lemon Milk';
+}
+.wedding-timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .vertical-timeline-element-title {
+    font-size: 1.5rem;
+    font-family: 'Lemon MilK';
+    margin-bottom: 10px;
+  }
+  
+  .vertical-timeline-element-content{
+    position: relative;
+    margin-left: 60px;
+    background: #fff;
+    border-radius: 0.25em;
+    padding: 1em;
+    box-shadow: 0 3px 0 transparent;
+}
+  .vertical-timeline-element {
+    margin: 20px 0;
+  }
+  .vertical-timeline-element img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .vertical-timeline-element-icon {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

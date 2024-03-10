@@ -1,0 +1,56 @@
+/* src/Header.css */
+
+.header {
+  display: flex;
+  background-color: #020305;
+  flex-direction: column; /* Display content in a column on small screens */
+  align-items: center; /* Center items on small screens */
+}
+
+.left-section {
+  width: 100%;
+}
+
+.text-content {
+  font-family: 'Lemon Milk', cursive;
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.love-quote {
+  font-family: 'Royal Wedding';
+  font-size: 32px;
+  color: rgb(28, 187, 255);
+  margin-top: 10px;
+}
+
+.right-section {
+  width: 100%;
+}
+
+.right-section img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.right-section img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row; /* Display content in a row on larger screens */
+  }
+
+  .left-section {
+    width: 50%;
+  }
+
+  .right-section {
+    width: 50%;
+  }
+}

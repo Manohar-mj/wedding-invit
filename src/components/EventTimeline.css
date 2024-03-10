@@ -1,0 +1,42 @@
+/* src/components/EventTimeline.css */
+
+.event-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.event-date p {
+  margin-left: 10px;
+}
+
+.event-image {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.event-image img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 8px;
+}
